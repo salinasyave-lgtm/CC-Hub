@@ -76,13 +76,4 @@ renderCards();
 
 search.addEventListener("input", renderCards);
 renderCards();
-const ccItems = [ const ccItems = [
-{
-title: "Cute Sims Hair",
-category: "Hair",
-creator: "Creator Name",
-description: "Long hairstyle for Sims 4",
-image: "PASTE PHOTO LINK HERE",
-link: "PASTE DOWNLOAD LINK HERE"
-}
-];
+const ccItems =
