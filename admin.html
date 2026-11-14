@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CC Hub - Owner Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      max-width: 650px;
+
+      margin: 40px auto;
+
+      padding: 20px;
+
+    }
+
+    input, textarea, select, button {
+
+      display: block;
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      padding: 12px;
+
+      margin: 10px 0;
+
+    }
+
+    button { cursor: pointer; }
+
+    #dashboard { display: none; }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>CC Hub Owner Dashboard</h1>
+
+  <section id="login">
+
+    <h2>Owner Login</h2>
+
+    <input id="email" type="email" placeholder="Your email">
+
+    <input id="password" type="password" placeholder="Your password">
+
+    <button id="loginButton">Log In</button>
+
+    <p id="loginMessage"></p>
+
+  </section>
+
+  <section id="dashboard">
+
+    <h2>Submit CC</h2>
+
+    <p>You are logged in as the owner.</p>
+
+    <form id="ccForm">
+
+      <input id="title" placeholder="CC name" required>
+
+      <input id="creator" placeholder="Creator name" required>
+
+      <select id="category" required>
+
+        <option value="">Choose a category</option>
+
+        <option value="Hair">Hair</option>
+
+        <option value="Clothing">Clothing</option>
+
+        <option value="Makeup">Makeup</option>
+
+        <option value="Furniture">Furniture</option>
+
+        <option value="Builds">Builds</option>
+
+        <option value="Other">Other</option>
+
+      </select>
+
+      <textarea id="description" placeholder="Description"></textarea>
+
+      <input id="image" type="url" placeholder="Preview image URL">
+
+      <input id="link" type="url" placeholder="Download link" required>
+
+      <button type="submit">Publish CC</button>
+
+    </form>
+
+    <p id="submitMessage"></p>
+
+    <button id="logoutButton">Log Out</button>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="supabase-config.js"></script>
+
+  <script src="admin.js"></script>
+
+</body>
+
+</html
+
 
