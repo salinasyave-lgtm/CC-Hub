@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CC Hub — a cozy place to discover Sims 4 custom content and creator links.">
+  <title>CC Hub — The Sims 4 Custom Content</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CC Hub home">
+      <span class="brand-mark">✿</span>
+      <span>CC <b>HUB</b><small>THE SIMS 4 CUSTOM CONTENT</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#browse">Browse CC</a>
+      <a href="#about">About</a>
+      <a class="nav-pill" href="#submit">Creator links</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-sparkle sparkle-one">✧</div>
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE CORNER OF SIMS STYLE</p>
+        <h1>Find your next<br><em>favorite</em> CC.</h1>
+        <p class="hero-text">A curated place for custom content, cute finds, and the creators who make them.</p>
+        <a class="primary-button" href="#browse">Explore the collection <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Decorative baby blue artwork">
+        <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+        <div class="sun">✿</div>
+        <div class="hero-sticker">made for<br><strong>your Sims</strong> ♡</div>
+        <span class="hero-star star-a">✦</span><span class="hero-star star-b">✧</span>
+      </div>
+    </section>
+
+    <section class="browse-section" id="browse">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE CC FINDS</p><h2>Browse the hub</h2></div>
+        <p class="section-note">Fresh inspiration for your game ♡</p>
+      </div>
+      <div class="toolbar">
+        <label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search hair, outfits, furniture..." aria-label="Search custom content"></label>
+        <div class="filters" id="filters" aria-label="Filter by category">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Hair">Hair</button>
+          <button class="filter" data-filter="Clothing">Clothing</button>
+          <button class="filter" data-filter="Build & Buy">Build & Buy</button>
+          <button class="filter" data-filter="Makeup">Makeup</button>
+          <button class="filter" data-filter="Accessories">Accessories</button>
+        </div>
+      </div>
+      <div class="card-grid" id="card-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No CC found. Try another search. 🩵</p>
+    </section>
+
+    <section class="creator-banner" id="submit">
+      <div><p class="eyebrow">LOVE A CREATOR?</p><h2>Give the makers<br>their flowers. ✿</h2>
+      <p>Visit creators' original pages for their downloads, updates, and any early-access or paid content.</p></div>
+      <a class="secondary-button" href="https://www.tumblr.com/" target="_blank" rel="noopener">Discover creators ↗</a>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow">A NOTE FROM CC HUB</p>
+      <h2>Made for Simmers, with love.</h2>
+      <p>CC Hub is a fan-made discovery directory. Support custom-content creators by following their download rules and visiting their official pages. Only files you made or have permission to redistribute should be hosted here.</p>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">CC HUB ✿</a><span>Fan-made directory • Not affiliated with EA or The Sims</span><span>Made with ♡</span></footer>
+  <script src="cc.js"></script>
+</body>
+</html>
